@@ -1,0 +1,17 @@
+name: gaussianpro
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - cudatoolkit=12.4                # Update to CUDA 12.4
+  - plyfile=0.8.1
+  - python=3.8                       # Use Python 3.8
+  - pip=22.3.1
+  - pytorch=2.0                      # Update to PyTorch 2.0 (or newer) for CUDA 12.x support
+  - torchaudio=2.0                   # Ensure torchaudio version is compatible with PyTorch 2.0
+  - torchvision=0.15                  # Update torchvision to a version compatible with PyTorch 2.0
+  - tqdm
+  - pip:
+      - submodules/diff-gaussian-rasterization
+      - submodules/simple-knn
